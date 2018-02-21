@@ -38,19 +38,52 @@ public class GameController : MonoBehaviour {
     public int checkvip = 0;
     public GameObject bg1;
     public GameObject bg2;
+    public GameObject bg3;
+    public GameObject bg4;
+    public GameObject bg5;
 
     public void doUpdateBG()
     {
-        int chon = UnityEngine.Random.Range(0, 3);
+        int chon = UnityEngine.Random.Range(0, 7);
         if (chon == 0)
         {
             bg1.SetActive(true);
             bg2.SetActive(false);
+            bg3.SetActive(false);
+            bg4.SetActive(false);
+            bg5.SetActive(false);
         }
-        else
+        else if (chon == 1) 
         {
             bg1.SetActive(false);
             bg2.SetActive(true);
+            bg3.SetActive(false);
+            bg4.SetActive(false);
+            bg5.SetActive(false);
+        }
+        else if (chon == 2)
+        {
+            bg1.SetActive(false);
+            bg2.SetActive(false);
+            bg3.SetActive(true);
+            bg4.SetActive(false);
+            bg5.SetActive(false);
+        }
+        else if (chon == 3)
+        {
+            bg1.SetActive(false);
+            bg2.SetActive(false);
+            bg3.SetActive(false);
+            bg4.SetActive(true);
+            bg5.SetActive(false);
+        }
+        else 
+        {
+            bg1.SetActive(false);
+            bg2.SetActive(false);
+            bg3.SetActive(false);
+            bg4.SetActive(false);
+            bg5.SetActive(true);
         }
     }
 

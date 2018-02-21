@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D5F90E33-405E-116B-8F7E-13DDCC8DB6F1}</ProjectGuid>
+    <ProjectGuid>{04E3D9A5-3EFB-DA9A-E79C-34F6A304455B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -195,19 +195,19 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Google.IOSResolver">
- <HintPath>D:/vtc/Math 2/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ <HintPath>D:/vtc/Math 2/ToanNhayDu/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
  </Reference>
  <Reference Include="Google.JarResolver">
- <HintPath>D:/vtc/Math 2/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ <HintPath>D:/vtc/Math 2/ToanNhayDu/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>D:/vtc/Math 2/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>D:/vtc/Math 2/ToanNhayDu/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
  <Reference Include="tk2dExternal">
- <HintPath>D:/vtc/Math 2/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+ <HintPath>D:/vtc/Math 2/ToanNhayDu/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
  </Reference>
  <Reference Include="tk2dSkin">
- <HintPath>D:/vtc/Math 2/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
+ <HintPath>D:/vtc/Math 2/ToanNhayDu/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -221,7 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{E5F6332D-C315-F29A-CFB2-3CEAD124B802}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{A775B27D-4ADD-593D-9568-320FD99D693F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

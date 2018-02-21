@@ -255,43 +255,43 @@ public class ThaoTac : MonoBehaviour {
         {
             doLoadData(5, 4, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 3 && GameController.Instance.mDiem <=10)
+        else if (GameController.Instance.mDiem >= 3 && GameController.Instance.mDiem <=9)
         {
             doLoadData(9, 9, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 11 && GameController.Instance.mDiem <= 15)
+        else if (GameController.Instance.mDiem >= 10 && GameController.Instance.mDiem <= 12)
         {
             doLoadData(15, 9, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 16 && GameController.Instance.mDiem <= 20)
+        else if (GameController.Instance.mDiem >= 13 && GameController.Instance.mDiem <= 16)
         {
             doLoadData(9, 15, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 21 && GameController.Instance.mDiem <= 25)
+        else if (GameController.Instance.mDiem >= 17 && GameController.Instance.mDiem <= 22)
         {
             doLoadData(20, 20, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 26 && GameController.Instance.mDiem <= 30)
+        else if (GameController.Instance.mDiem >= 23 && GameController.Instance.mDiem <= 26)
         {
             doLoadData(40, 10, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 31 && GameController.Instance.mDiem <= 40)
+        else if (GameController.Instance.mDiem >= 27 && GameController.Instance.mDiem <= 30)
         {
             doLoadData(40, 40, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 41 && GameController.Instance.mDiem <= 50)
+        else if (GameController.Instance.mDiem >= 31 && GameController.Instance.mDiem <= 35)
         {
             doLoadData(50, 50, "+", 1);
         }
-        else if (GameController.Instance.mDiem >= 51 && GameController.Instance.mDiem <= 60)
+        else if (GameController.Instance.mDiem >= 36 && GameController.Instance.mDiem <= 40)
         {
             doLoadData(10, 10, "-", 1);
         }
-        else if (GameController.Instance.mDiem >= 61 && GameController.Instance.mDiem <= 70)
+        else if (GameController.Instance.mDiem >= 41 && GameController.Instance.mDiem <= 45)
         {
             doLoadData(50, 50, "-", 1);
         }
-        else if (GameController.Instance.mDiem >= 71 && GameController.Instance.mDiem <= 90)
+        else if (GameController.Instance.mDiem >= 46 && GameController.Instance.mDiem <= 54)
         {
             if (GameController.Instance.mDiem % 2 == 0)
             {
@@ -302,7 +302,7 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(50, 50, "-", 2);
             }
         }
-        else if (GameController.Instance.mDiem >= 91 && GameController.Instance.mDiem <= 100)
+        else if (GameController.Instance.mDiem >= 55 && GameController.Instance.mDiem <= 60)
         {
             if (GameController.Instance.mDiem % 3 == 0)
             {
@@ -321,7 +321,7 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(100, 100, "+", 1);
             }
         }
-        else if (GameController.Instance.mDiem >= 101 && GameController.Instance.mDiem <= 150)
+        else if (GameController.Instance.mDiem >= 61 && GameController.Instance.mDiem <= 70)
         {
             if (GameController.Instance.mDiem % 3 == 0)
             {
@@ -340,7 +340,7 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(300, 300, "+", 1);
             }
         }
-        else if (GameController.Instance.mDiem >= 151 && GameController.Instance.mDiem <= 200)
+        else if (GameController.Instance.mDiem >= 71 && GameController.Instance.mDiem <= 85)
         {
             if (GameController.Instance.mDiem % 4 == 0)
             {
@@ -359,7 +359,7 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(500, 500, "+", 1);
             }
         }
-        else if (GameController.Instance.mDiem >= 201 && GameController.Instance.mDiem <= 250)
+        else if (GameController.Instance.mDiem >= 86 && GameController.Instance.mDiem <= 100)
         {
             if (GameController.Instance.mDiem % 4 == 0)
             {
@@ -378,15 +378,15 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(1000, 1000, "+", 1);
             }
         }
-        else if (GameController.Instance.mDiem >= 251 && GameController.Instance.mDiem <= 270)
+        else if (GameController.Instance.mDiem >= 101 && GameController.Instance.mDiem <= 110)
         {
             doLoadData(9, 9, "x", 1);
         }
-        else if (GameController.Instance.mDiem >= 271 && GameController.Instance.mDiem <= 280)
+        else if (GameController.Instance.mDiem >= 111 && GameController.Instance.mDiem <= 125)
         {
             doLoadData(9, 9, "x", 2);
         }
-        else if (GameController.Instance.mDiem >= 281 && GameController.Instance.mDiem <= 290)
+        else if (GameController.Instance.mDiem >= 126 && GameController.Instance.mDiem <= 137)
         {
             if (GameController.Instance.mDiem % 2 == 0)
             {
@@ -397,7 +397,7 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(9, 30, "x", 1);
             }
         }
-        else if (GameController.Instance.mDiem >= 291 && GameController.Instance.mDiem <= 305)
+        else if (GameController.Instance.mDiem >= 138 && GameController.Instance.mDiem <= 150)
         {
             if (GameController.Instance.mDiem % 2 == 0)
             {
@@ -408,11 +408,11 @@ public class ThaoTac : MonoBehaviour {
                 doLoadData(40, 10, "x", 2);
             }
         }
-        else if (GameController.Instance.mDiem >= 306 && GameController.Instance.mDiem <= 315)
+        else if (GameController.Instance.mDiem >= 151 && GameController.Instance.mDiem <= 170)
         {
             doLoadData(9, 9, ":", 1);
         }
-        else if (GameController.Instance.mDiem >= 316 && GameController.Instance.mDiem <= 325)
+        else if (GameController.Instance.mDiem >= 171 && GameController.Instance.mDiem <= 180)
         {
             doLoadData(9, 9, ":", 2);
         }
