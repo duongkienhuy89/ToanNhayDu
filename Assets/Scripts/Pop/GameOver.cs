@@ -12,6 +12,7 @@ public class GameOver : MonoBehaviour {
     public tk2dTextMesh txtScore;
     public tk2dTextMesh txtBest;
     public tk2dSprite BangGameOver;
+	public tk2dSprite KhiCon;
     InterstitialAd interstitial;
 
 
@@ -82,11 +83,17 @@ public class GameOver : MonoBehaviour {
             GameController.Instance.mMax = GameController.Instance.mDiem;
             DataManager.SaveHightLevel(GameController.Instance.mMax);
             SoundManager.Instance.PlayAudioTrue();
+			KhiCon.SetSprite ("khihoi");
         }
-        else
+		else if (GameController.Instance.mDiem == GameController.Instance.mMax)
         {
+			KhiCon.SetSprite ("khixet");
             SoundManager.Instance.PlayAudioEmty();
-        }
+		}else
+		{
+			KhiCon.SetSprite ("khikhoc");
+			SoundManager.Instance.PlayAudioEmty();
+		}
         txtBest.text = "" + GameController.Instance.mMax;
 
         if (GameController.Instance.mDiem % 7 == 0)

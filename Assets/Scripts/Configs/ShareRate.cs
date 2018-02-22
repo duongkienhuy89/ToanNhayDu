@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ShareRate  {
 
-    public static string titleShare = "Quick Math Violympic";
-    public static string LinkShare = "https://play.google.com/store/apps/details?id=balo.game.toanlop3";
+	public static string titleShare = "Quick Math";
+	public static string LinkShare = "https://play.google.com/store/apps/details?id=fallschirm.kopfrechnen.lernspiel";
 
     public static void Share()
     {
