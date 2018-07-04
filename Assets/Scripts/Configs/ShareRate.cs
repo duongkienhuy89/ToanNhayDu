@@ -5,7 +5,7 @@ public class ShareRate  {
 
 	public static string titleShare = "Quick Math";
 	public static string LinkShare = "https://play.google.com/store/apps/details?id=fallschirm.kopfrechnen.lernspiel";
-
+	public static string LinkDayBe = "https://play.google.com/store/apps/details?id=math.clouds.kids";
     public static void Share()
     {
         //execute the below lines if being run on a Android device
@@ -34,5 +34,10 @@ public class ShareRate  {
     {
         Application.OpenURL(LinkShare);
     }
+
+	public static void RateDayBe()
+	{
+		Application.OpenURL(LinkDayBe);
+	}
    
 }

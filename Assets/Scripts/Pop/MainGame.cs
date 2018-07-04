@@ -5,6 +5,15 @@ public class MainGame : MonoBehaviour {
 
     public tk2dUIItem btbPlay;
     public tk2dUIItem btbVol;
+	public tk2dUIItem btbDayBe;
+
+	public void onClick_btbDayBe()
+	{
+		if (GameController.Instance.currentState == GameController.State.WAIT)
+		{
+			ShareRate.RateDayBe ();
+		}
+	}
   
 
     public void onClick_btbPlay()
@@ -39,6 +48,7 @@ public class MainGame : MonoBehaviour {
 	void Start () {
         btbPlay.OnClick += onClick_btbPlay;
         btbVol.OnClick += onClick_btbVol;
+		btbDayBe.OnClick += onClick_btbDayBe;
      
 
 	}

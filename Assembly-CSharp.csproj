@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\Mannager\CameraDrop.cs" />
      <Compile Include="Assets\Scripts\Mannager\DataManager.cs" />
      <Compile Include="Assets\Scripts\Mannager\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Moves\ZoomMove.cs" />
      <Compile Include="Assets\Scripts\Pop\BackGround.cs" />
      <Compile Include="Assets\Scripts\Pop\GameOver.cs" />
      <Compile Include="Assets\Scripts\Pop\MainGame.cs" />
