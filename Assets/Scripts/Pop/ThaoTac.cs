@@ -41,6 +41,8 @@ public class ThaoTac : MonoBehaviour {
 
     void doXuLy(string pDa)
     {
+        try
+        {
         if (GameController.Instance.currentState == GameController.State.INGAME)
         {
             SoundManager.Instance.PlayAudioCick();
@@ -91,9 +93,15 @@ public class ThaoTac : MonoBehaviour {
                 PhepToan.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = mPhepToan;
             }
         }
-       
 
 
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 
     }
 
@@ -114,6 +122,8 @@ public class ThaoTac : MonoBehaviour {
 
     void NhapNhay()
     {
+        try
+        {
         if (GameController.Instance.currentState == GameController.State.INTRUE)
         {
             if (numColorA > 0)
@@ -128,6 +138,13 @@ public class ThaoTac : MonoBehaviour {
                 txtCoin.color = new Color(txtCoin.color.r, txtCoin.color.g, txtCoin.color.b, numColorCoinA);
             }
            
+        }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
         }
     }
 
@@ -196,6 +213,8 @@ public class ThaoTac : MonoBehaviour {
 
     void setOdu(GameObject odu)
     {
+        try
+        {
         if (checkDu && GameController.Instance.currentState==GameController.State.INGAME)
         {
             SoundManager.Instance.PlayAudioOdu();
@@ -204,6 +223,13 @@ public class ThaoTac : MonoBehaviour {
             PhepToan.transform.GetChild(1).gameObject.SetActive(true);
             checkDu = false;
           
+        }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
         }
     }
 
@@ -251,6 +277,8 @@ public class ThaoTac : MonoBehaviour {
 
     public void setData()
     {
+        try
+        {
         if (GameController.Instance.mDiem < 3)
         {
             doLoadData(5, 4, "+", 1);
@@ -517,11 +545,20 @@ public class ThaoTac : MonoBehaviour {
         checkDu = true;
         txtCoin.gameObject.SetActive(false);
         PhepToan.transform.GetChild(1).gameObject.SetActive(false);
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
         
     }
 
     void doLoadData(int pSo1, int pSo2,string dau,int loai)
     {
+        try
+        {
         if (dau.Equals("+") || dau.Equals("-") || dau.Equals("x"))
         {
             int chon1 = UnityEngine.Random.Range(0, pSo1) + 1;
@@ -668,6 +705,13 @@ public class ThaoTac : MonoBehaviour {
 
         }
        // mLoai = loai;
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 
     }
 
@@ -675,7 +719,8 @@ public class ThaoTac : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        try
+        {
         btnNumber0.OnClick += onClick_Numb0;
         btnNumber1.OnClick += onClick_Numb1;
         btnNumber2.OnClick += onClick_Numb2;
@@ -692,13 +737,20 @@ public class ThaoTac : MonoBehaviour {
         btnOdu2.OnClick += onClick_Odu2;
         btnOdu3.OnClick += onClick_Odu3;
         povisiStart = PhepToan.transform.localPosition.y;
+        }
+        catch (System.Exception)
+        {
 
+
+            throw;
+        }
         
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        
         Move();
         NhapNhay();
 	}

@@ -59,7 +59,8 @@ public class GameOver : MonoBehaviour {
 
     public void setData(string pheptoan)
     {
-
+        try
+        {
         if (GameController.Instance.checkvip != 10)
         {
             if (GameController.Instance.mDiem % 3 == 0)
@@ -120,10 +121,19 @@ public class GameOver : MonoBehaviour {
         {
             BangGameOver.color = new Color(float.Parse("" + 24) / 255, float.Parse("" + 162) / 255, float.Parse("" + 208) / 255, float.Parse("" + 230) / 255);
         }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
     void onClick_Continute()
     {
+        try
+        {
         if (GameController.Instance.checkvip != 10 && checkAd)
         {
             ShowAdsInterstitial();
@@ -135,24 +145,58 @@ public class GameOver : MonoBehaviour {
         PopUpController.instance.HideGameOver();
         PopUpController.instance.ShowMainGame();
         GameController.Instance.currentState = GameController.State.WAIT;
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 
     }
     void onClick_Rank()
     {
+        try
+        {
         ShareRate.Rate();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
     void onClick_Share()
     {
+        try
+        {
         ShareRate.Share();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
 	// Use this for initialization
 	void Start () {
 
+        try
+        {
         btnContinute.OnClick += onClick_Continute;
         btnRank.OnClick += onClick_Rank;
         btnShare.OnClick += onClick_Share;
         LoadAdsInterstitial();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	
 	}
 	

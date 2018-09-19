@@ -9,15 +9,26 @@ public class MainGame : MonoBehaviour {
 
 	public void onClick_btbDayBe()
 	{
+        try
+        {
 		if (GameController.Instance.currentState == GameController.State.WAIT)
 		{
 			ShareRate.RateDayBe ();
 		}
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	}
   
 
     public void onClick_btbPlay()
     {
+        try
+        {
         if (GameController.Instance.currentState == GameController.State.WAIT)
         {
             PopUpController.instance.HideMainGame();
@@ -25,9 +36,18 @@ public class MainGame : MonoBehaviour {
             GameController.Instance.doUpdateBG();
             SoundManager.Instance.PlayAudioContinute();
         }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
     public void onClick_btbVol()
     {
+        try
+        {
         if (GameController.Instance.checkVol)
         {
             SoundManager.Instance.PauseBGMusic();
@@ -40,16 +60,31 @@ public class MainGame : MonoBehaviour {
             GameController.Instance.checkVol = true;
             btbVol.gameObject.GetComponent<tk2dSprite>().SetSprite("volopen");
         }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
   
 
 	// Use this for initialization
 	void Start () {
+        try
+        {
         btbPlay.OnClick += onClick_btbPlay;
         btbVol.OnClick += onClick_btbVol;
 		btbDayBe.OnClick += onClick_btbDayBe;
-     
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 
 	}
 	

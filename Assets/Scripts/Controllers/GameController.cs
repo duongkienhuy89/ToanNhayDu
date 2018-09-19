@@ -44,6 +44,8 @@ public class GameController : MonoBehaviour {
 
     public void doUpdateBG()
     {
+        try
+        {
         int chon = UnityEngine.Random.Range(0, 7);
         if (chon == 0)
         {
@@ -85,6 +87,13 @@ public class GameController : MonoBehaviour {
             bg4.SetActive(false);
             bg5.SetActive(true);
         }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
 
@@ -100,16 +109,34 @@ public class GameController : MonoBehaviour {
 
     void Awake()
     {
+        try
+        {
         Application.targetFrameRate = 30;
         QualitySettings.vSyncCount = -1;
         ngonngu = Application.systemLanguage.ToString().ToLower().Trim();
         checkvip = DataManager.GetVip();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
 	// Use this for initialization
 	void Start () {
+        try
+        {
         StartCoroutine(WaitTimeLoadData(3f));
         mMax = DataManager.GetHightLevel();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	}
 	
 	// Update is called once per frame
